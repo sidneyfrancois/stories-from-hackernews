@@ -2,7 +2,7 @@ import * as React from "react";
 import "./App.css";
 import { useCallback, useMemo, useReducer, useState } from "react";
 import axios from "axios";
-import SearchForm from "./Components/SearchForm";
+import { SearchForm } from "./Components/SearchForm";
 import { List } from "./Components/List";
 import { useStorageState } from "./Hooks/useStorageState";
 import { storiesReducer } from "./Reducers/storiesReducer";

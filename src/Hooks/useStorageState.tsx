@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export const useStorageState = (
+const useStorageState = (
   key: string,
   initialState: string
 ): [string, (newValue: string) => void] => {
@@ -17,3 +17,5 @@ export const useStorageState = (
 
   return [value, setValue];
 };
+
+export { useStorageState };

@@ -41,7 +41,7 @@ type StoriesRemoveAction = {
   payload: Story;
 };
 
-export const storiesReducer = (state: any, action: any) => {
+const storiesReducer = (state: any, action: any) => {
   switch (action.type) {
     case "STORIES_FETCH_INIT":
       return {
@@ -73,3 +73,5 @@ export const storiesReducer = (state: any, action: any) => {
       throw new Error();
   }
 };
+
+export { storiesReducer };

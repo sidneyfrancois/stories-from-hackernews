@@ -9,7 +9,7 @@ type InputWithLabelProps = {
   children: React.ReactNode;
 };
 
-export default function InputWithLabel({
+function InputWithLabel({
   id,
   value,
   type = "text",
@@ -39,3 +39,5 @@ export default function InputWithLabel({
     </>
   );
 }
+
+export { InputWithLabel };

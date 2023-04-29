@@ -1,4 +1,4 @@
-import InputWithLabel from "./InputWithLabel";
+import { InputWithLabel } from "./InputWithLabel";
 
 type SearchFormProps = {
   searchTerm: string;
@@ -6,7 +6,7 @@ type SearchFormProps = {
   onSearchSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
 };
 
-export default function SearchForm({
+function SearchForm({
   searchTerm,
   onSearchInput,
   onSearchSubmit,
@@ -27,3 +27,5 @@ export default function SearchForm({
     </form>
   );
 }
+
+export { SearchForm };

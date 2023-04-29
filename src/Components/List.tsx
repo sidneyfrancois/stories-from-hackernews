@@ -20,7 +20,7 @@ type ListProps = {
   onRemoveItem: (item: Story) => void;
 };
 
-export const List = memo(({ list, onRemoveItem }: ListProps) => (
+const List = memo(({ list, onRemoveItem }: ListProps) => (
   <ul>
     {list.map((item: any) => {
       return (
@@ -48,3 +48,5 @@ const Item: React.FC<ItemProps> = ({ item, onRemoveItem }): JSX.Element => (
     </span>
   </li>
 );
+
+export { List };
